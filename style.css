@@ -1,0 +1,553 @@
+@font-face {
+    font-family: "OPTI";
+    src: url(OPTIVenus-BoldExtended-2.otf);
+}
+@font-face {
+    font-family: "Neue 55";
+    src: url(NHaasGroteskTXPro-55Rg.otf);
+}
+@font-face {
+    font-family: "Neue med";
+    src: url(NHaasGroteskMedium.otf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: #D6D1CD;
+    background-color: #121212;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: flex-end;
+    width: 85%;
+    height: 7%;
+    background-color: transparent;
+    color: #d6d1cde9;
+    z-index: 99;
+}
+#nav h4{
+    font-family: "OPTI";
+    font-size: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+#nav h4:hover{
+    color: #afaca9e9;
+}
+
+#txt{
+    position: relative;
+    width: 85%;
+    height: 97%;
+    margin-top: -2%;
+}
+
+#txt h1{
+    font-family: "OPTI";
+    margin-top: 12vh;
+    font-size: 137px;
+    line-height: 135px;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+}
+#txt h1 svg{
+    background-color: transparent;
+    margin-left: 0px;
+    animation: rotation 9s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#txt .bottxt{
+    font-family: "Neue 55";
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -5.5vh;
+    margin-left: .5vw;
+    letter-spacing: 0px;
+}
+
+.inner{
+    position: absolute;
+    top: 53%;
+    right: 20px;
+    background-color: transparent;
+}
+
+#txt h1 .inner h2{
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: "Neue 55";
+    line-height: 40px;
+    font-weight: 100;
+    letter-spacing: 0px ;
+}
+.inner .slash{
+    color: #5C5C5C;
+}
+
+#txt .photu{
+    position: absolute;
+    top: 18%;
+    left: 56%;
+    transform: translate(-50%,0);
+    width: 60%;
+    height: 85%;
+    background-color: transparent;
+}
+#txt .photu img{
+    height: 110%;
+}
+
+
+/* ATULL */
+
+
+#mainatul {
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+    position: relative;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+}
+
+#para {
+    color: rgb(214 209 206);
+    font-family: "Neue 55";
+    font-size: 25px;
+    width: 130vw;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+#para #p1 {
+    position: absolute;
+    top: -17%;
+    left: 15%;
+
+
+}
+.space{
+    margin-left: 6%;
+}
+#p1 span {
+    color: grey;
+
+}
+#p3 {
+    position: absolute;
+    top: 120%;
+    left: 22%;
+    transform: translate(-50%,0);
+    font-size: 33px;
+}
+
+#page2 img {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    width: 25%;
+    transform: rotate(12deg);
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #121212;
+    position: relative;
+}
+
+#page3 img {
+    margin-top: -5%;
+    width: 25%;
+    transform: rotate(15deg);
+}
+
+/* #page3 h1 {
+    font-size: 12vh;
+} */
+
+.svg {
+    animation: rotation 9s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+#worktxt {
+    color: rgb(226, 235, 205);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#worktxt h1 {
+    font-size: 80px;
+    font-family: "OPTI";
+    color: rgb(214 209 206);
+    line-height: 95px;
+    letter-spacing: -1px;
+}
+
+    /* ATULLL */
+
+
+/* sakshamm */
+#mainsak {
+    margin-top: 90vh;
+    width: 100%;
+    height: 230vh;
+    background-color: #121212;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#top {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+#hero {
+    width: 53%;
+    height: 73%;
+    position: relative;
+    display: flex;
+}
+
+#hero img {
+    width: 97%;
+    height: 80%;
+    margin-top: 12%;
+    margin-left: 78%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 4s;
+    filter: grayscale(100%);
+}
+
+#et {
+    display: flex;
+    text-transform: uppercase;
+    align-items: baseline;
+    margin-top: 85%;
+    position: absolute;
+    margin-left: 77%;
+    font-family: "Neue 55";
+    color: #DDD5CC;
+}
+
+#et h1 {
+    font-size: 90px;
+    color: #d6d1ce;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+#et h4 {
+    font-size: 38px;
+    color: #5c5c5c;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#hero1 {
+    width: 53%;
+    height: 73%;
+    position: relative;
+    display: flex;
+}
+
+#hero1 img {
+    width: 97%;
+    height: 80%;
+    margin-top: 12%;
+    margin-left: 14%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 4s;
+    filter: grayscale(100%);
+}
+
+#et1 {
+    display: flex;
+    text-transform: uppercase;
+    align-items: baseline;
+    margin-top: 83%;
+    position: absolute;
+    margin-left: 13%;
+    cursor: pointer;
+    font-family: "Neue 55";
+    color: #DDD5CC;
+}
+
+#et1 h1 {
+    font-size: 90px;
+    color: #d6d1ce;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+#et1 h4 {
+    font-size: 40px;
+    color: #5c5c5c;
+    cursor: pointer;
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+#hero img:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+#hero1 img:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+
+/* Saksham */
+
+
+/* Amarjeet */
+#mainamarjeet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+}
+
+#imagethree {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    width: 50%;
+    height: 70%;
+    background-image: url(fiire-new-strip-min.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
+}
+
+#imagethree:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+#textthree {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    bottom: -28%;
+    font-size: 45px;
+    color: #ffff;
+}
+
+#textthree h1 {
+    font-weight: 400;
+    font-family: "Neue 55";
+    color: #DDD5CC;
+}
+
+#textthree h5 {
+    color: #5c5c5c;
+    font-family: "Neue 55";
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+
+#maina2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+}
+
+#imagefour {
+    position: absolute;
+    left: 7%;
+    top: 5%;
+    width: 50%;
+    height: 70%;
+    background-image: url(CBD_Thuney_1368-2-1-min.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
+}
+
+#imagefour:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+
+#textfour {
+    position: absolute;
+    bottom: -29%;
+    font-size: 45px;
+    color: #ffff;
+    line-height: 70px;
+    font-family: "Neue 55";
+    color: #DDD5CC;
+}
+
+#textfour h1 {
+    margin-left: 65px;
+    font-size: 95px;
+    font-weight: 400;
+}
+
+#textfour h2 {
+    margin-left: 17px;
+    font-size: 95px;
+    font-weight: 400;
+}
+
+#happy h5 {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.406);
+}
+
+#happy {
+    margin-top: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Amarjeet */
+
+/* Anubhav last */
+#last {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D6D1CD;
+    background-color: #121212;
+}
+
+.round {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+
+}
+
+.circle {
+    background-color: transparent;
+    animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.arrow {
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: rotate(320deg);
+}
+
+
+#socials {
+    margin-top: 35%;
+}
+
+.slash {
+    color: #5C5C5C;
+    padding-right: 5px;
+}
+
+#socials a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #C6C0BC;
+    font-family: "Neue 55";
+    padding-left: 10px;
+}
+
+.awww {
+    display: inline-block;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+#last h2 {
+    margin-top: 30px;
+    font-family: "Neue med";
+    font-size: 20px;
+}
